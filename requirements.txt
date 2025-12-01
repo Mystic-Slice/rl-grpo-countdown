@@ -1,0 +1,9 @@
+pandas
+datasets
+transformers
+trl
+peft
+numpy
+torch
+tensorboard
+vllm
