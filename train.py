@@ -10,13 +10,7 @@ MODEL_TYPE = 'lora'
 
 model, tokenizer = get_model("Qwen/Qwen3-4B-Instruct-2507", MODEL_TYPE)
 model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={'use_reentrant': False})
-# model.generation_config.eos_token_id = 151645
 
-# model.config.pad_token_id = tokenizer.pad_token_id
-
-# tokenizer.bos_token = tokenizer.pad_token
-
-# tokenizer.bos_token_id = tokenizer.pad_token_id
 print(model)
 print(tokenizer)
 
